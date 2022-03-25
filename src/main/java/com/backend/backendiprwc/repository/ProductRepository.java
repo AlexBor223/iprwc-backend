@@ -1,0 +1,9 @@
+package com.backend.backendiprwc.repository;
+
+import com.backend.backendiprwc.model.Product;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProductRepository extends JpaRepository<Product, Long> {
+
+    Product findByName(String Name);
+}
